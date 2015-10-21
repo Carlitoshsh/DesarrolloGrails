@@ -9,8 +9,8 @@ class Post{
 
     static constraints = {
         topic size: 3..50
-        dateCreated min: new Date()
-        lastUpdate min: dateCreated
+       // dateCreated min: new Date()
+        // lastUpdate min: dateCreated
     }
 
 }
