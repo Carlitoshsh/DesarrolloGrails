@@ -19,7 +19,9 @@ class Regular extends User{
     }
 
     static constraints = {
-
+        postViews min: 0
+        strikesNumber size: 0..3
+        starsNumber size: 0..5
     }
 
 }

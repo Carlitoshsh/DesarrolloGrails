@@ -8,7 +8,9 @@ class Post{
     boolean isAllowed
 
     static constraints = {
-
+        topic size: 3..50
+        dateCreated min: new Date()
+        lastUpdate min: dateCreated
     }
 
 }
