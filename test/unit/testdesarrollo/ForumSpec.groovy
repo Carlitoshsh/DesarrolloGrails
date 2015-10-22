@@ -56,12 +56,13 @@ class ForumSpec extends Specification {
         boolean rta = rta1
 
         then:
-        (new Date()).before(dc) == rta1
+        if(dc != null) (new Date()).before(dc) == rta1
 
         where:
         dc | rta1
         new Date() | false
         (new Date())+1 | true
+        null | false
     }
 
 
