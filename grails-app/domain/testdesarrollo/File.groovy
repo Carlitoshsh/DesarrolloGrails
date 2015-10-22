@@ -14,8 +14,10 @@ class File{
 
     }
 
-    static constraints = { fileType nullable: false, matches: "([.+[\\\\/].+]+)"
-       size max: (double)10240
+    static constraints = {
+        fileType blank: false,  nullable: false, matches: "(.+[/].+)"
+        size nullable: false, max: (double)10240
+        content nullable: false
         
     }
 
