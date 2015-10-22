@@ -21,9 +21,10 @@ class Post{
 
 
     static constraints = {
-        topic size: 3..50
-       // dateCreated min: new Date()
-        // lastUpdate min: dateCreated
+        topic nullable: false, size: 3..50
+        dateCreated nullable: false, min: new Date().next()
+        lastUpdate nullable: false, min: new Date().next()
+        isAllowed nullable: false
     }
 
 }
