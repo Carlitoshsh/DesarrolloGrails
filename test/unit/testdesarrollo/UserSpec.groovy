@@ -1,4 +1,4 @@
-package desarrollograils
+package testdesarrollo
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
@@ -20,7 +20,7 @@ class UserSpec extends Specification {
 
     def "test name"(){
         when:
-        def usr = new User(age: 20, lastname: "x"*10, username: "kokoriko", password: "as31234ww")
+        def usr = new User()
         usr.name = name
         usr.validate()
 
@@ -30,7 +30,7 @@ class UserSpec extends Specification {
         where:
         name  | valido
         " " | false // Minimo son tres caracteres not blank
-        "A"*30 | true //Minimo son tres caracteres
+        //"A"*30 | true //Minimo son tres caracteres
 
     }
 

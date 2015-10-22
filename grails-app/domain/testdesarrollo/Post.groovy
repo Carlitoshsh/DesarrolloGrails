@@ -1,4 +1,4 @@
-package desarrollograils
+package testdesarrollo
 
 class Post{
 
@@ -6,6 +6,19 @@ class Post{
     Date dateCreated
     Date lastUpdate
     boolean isAllowed
+
+    def comment(){
+
+    }
+
+    def rate(){
+
+    }
+
+    def share(){
+
+    }
+
 
     static constraints = {
         topic size: 3..50

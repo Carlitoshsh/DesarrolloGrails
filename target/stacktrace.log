@@ -1,0 +1,264 @@
+2015-10-21 19:50:41,631 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:50:41,635 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:50:41,637 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:50:41,638 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:50:41,649 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:50:41,649 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,362 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,366 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,368 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,368 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,378 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:53:54,379 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,897 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,901 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,902 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,903 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,913 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 19:58:28,913 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,283 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,289 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,291 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,291 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,306 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
+2015-10-21 20:05:13,307 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+usr.hasErrors() == !valido
+|   |           |  ||
+|   true        |  |true
+|               |  false
+|               false
+testdesarrollo.User : (unsaved)
+
+	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
