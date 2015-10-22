@@ -15,9 +15,6 @@ class UserSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-    }
-
     def "test name"(){
         when:
         def usr = new User()
@@ -30,8 +27,8 @@ class UserSpec extends Specification {
         where:
         name  | valido
         " " | false // Minimo son tres caracteres not blank
-        //"A"*30 | true //Minimo son tres caracteres
-
+        "A"*2 | false // Minimo son tres caracteres
+        "A"*51 | false // Minimo son tres caracteres
     }
 
     def "test lastName"(){

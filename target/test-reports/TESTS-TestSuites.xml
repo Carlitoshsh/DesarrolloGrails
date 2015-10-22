@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="Niki-PC" id="0" name="UserSpec" package="testdesarrollo" tests="5" time="5.358" timestamp="2015-10-22T01:05:09">
+  <testsuite errors="0" failures="0" hostname="Niki-PC" id="0" name="UserSpec" package="testdesarrollo" tests="5" time="5.226" timestamp="2015-10-22T01:15:59">
       <properties />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test name" time="4.097">
-          <failure message="Condition not satisfied:&#xa;&#xa;usr.hasErrors() == !valido&#xa;|   |           |  ||&#xa;|   true        |  |true&#xa;|               |  false&#xa;|               false&#xa;testdesarrollo.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+      <testcase classname="testdesarrollo.UserSpec" name="test name" time="3.931" />
 
-usr.hasErrors() == !valido
-|   |           |  ||
-|   true        |  |true
-|               |  false
-|               false
-testdesarrollo.User : (unsaved)
+      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="1.116" />
 
-	at testdesarrollo.UserSpec.test name(UserSpec.groovy:28)
-</failure>
+      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.038" />
 
-      </testcase>
+      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.031" />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="1.037" />
-
-      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.047" />
-
-      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.036" />
-
-      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.045" />
+      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.036" />
 
       <system-out><![CDATA[--Output from test name--
 --Output from test lastName--

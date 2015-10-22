@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e3a516-e215-44bc-905a-5fb0aeca843a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/User.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\User.groovy" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\test\unit\desarrollograils\UserSpec.groovy" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\Admin.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/Admin.groovy" />
-      <change type="MOVED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\File.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/File.groovy" />
-      <change type="MOVED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\Forum.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/Forum.groovy" />
-      <change type="MOVED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\Post.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/Post.groovy" />
-      <change type="MOVED" beforePath="C:\Users\Niki\Documents\GitHub\DesarrolloGrails\grails-app\domain\desarrollograils\Regular.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/Regular.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testdesarrollo/User$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/testdesarrollo/User$__clinit__closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testdesarrollo/User.class" afterPath="$PROJECT_DIR$/target/classes/testdesarrollo/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/unit/testdesarrollo/UserSpec.class" afterPath="$PROJECT_DIR$/target/test-classes/unit/testdesarrollo/UserSpec.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/testdesarrollo/0_UserSpec.html" afterPath="$PROJECT_DIR$/target/test-reports/html/testdesarrollo/0_UserSpec.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/plain/TEST-unit-unit-testdesarrollo.UserSpec.txt" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-unit-unit-testdesarrollo.UserSpec.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TEST-unit-unit-testdesarrollo.UserSpec.xml" afterPath="$PROJECT_DIR$/target/test-reports/TEST-unit-unit-testdesarrollo.UserSpec.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" afterPath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/User.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/testdesarrollo/User.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/testdesarrollo/UserSpec.groovy" afterPath="$PROJECT_DIR$/test/unit/testdesarrollo/UserSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/all.html" afterPath="$PROJECT_DIR$/target/test-reports/html/all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/failed.html" afterPath="$PROJECT_DIR$/target/test-reports/html/failed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/index.html" afterPath="$PROJECT_DIR$/target/test-reports/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DesarrolloGrails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +45,8 @@
       <file leaf-file-name="User.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/testdesarrollo/User.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5961537">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -54,8 +58,8 @@
       <file leaf-file-name="UserSpec.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unit/testdesarrollo/UserSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7945545">
-              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6311881">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -555,12 +559,12 @@
       <created>1445470692717</created>
       <option name="number" value="Default" />
       <updated>1445470692717</updated>
-      <workItem from="1445470689169" duration="3773000" />
+      <workItem from="1445470689169" duration="4576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3773000" />
+    <option name="totallyTimeSpent" value="4576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1314" height="784" extended-state="6" />
@@ -635,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/testdesarrollo/User.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5961537">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -646,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/testdesarrollo/UserSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7945545">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6311881">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
