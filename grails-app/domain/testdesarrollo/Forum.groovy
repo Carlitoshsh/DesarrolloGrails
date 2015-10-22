@@ -7,9 +7,9 @@ class Forum{
     String category
 
     static constraints = {
-        name unique: true, size: 3..20
-        dateCreated min: new Date() // Debe ser futura
-        category size: 3..15
+        name nullable: false, unique: true, size: 3..20
+        dateCreated nullable: false, min: new Date() // Debe ser futura
+        category nullable: false, size: 3..15
     }
 
 }
