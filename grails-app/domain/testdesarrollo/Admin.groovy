@@ -4,7 +4,10 @@ class Admin extends User{
 
     int level
     double rating
-    //static hasMany = [forums: Forum]
+    static hasMany = [forums: Forum]
+    static mapping = {
+        forums fetch: "join"
+    }
 
     static constraints = {
         level   blank:false, nullable: false, range: 1..5

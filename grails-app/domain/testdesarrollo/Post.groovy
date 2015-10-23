@@ -18,6 +18,11 @@ class Post{
     def share(){
 
     }
+    static belongsTo = [Regular,Forum]
+    static hasMany = [files:File]
+    static mapping = {
+        files fetch: "join"
+    }
 
 
     static constraints = {
@@ -25,6 +30,7 @@ class Post{
         dateCreated nullable: false, min: new Date().next()
         lastUpdate nullable: false, min: new Date().next()
         isAllowed nullable: false
+
     }
 
 }

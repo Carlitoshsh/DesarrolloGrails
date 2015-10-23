@@ -13,7 +13,7 @@ class File{
     def share(){
 
     }
-
+    static belongsTo = [Post]
     static constraints = {
         fileType blank: false,  nullable: false, matches: "(.+[/].+)"
         size nullable: false, max: (double)10240
