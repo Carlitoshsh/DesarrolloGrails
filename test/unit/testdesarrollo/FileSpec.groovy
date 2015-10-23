@@ -3,10 +3,6 @@ package testdesarrollo
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
-import java.util.regex.Pattern
-import java.util.regex.Matcher
-
-
 
 @TestFor(File)
 class FileSpec extends Specification {
@@ -18,22 +14,17 @@ class FileSpec extends Specification {
     }
 
     def "test fileType"() {
-        Pattern pattern= Pattern.compile(".+[/].+")
 
         when:
-        String s=new String()
-        s="sdkjskdjs"
-        def file = new File(size: 1024.3, content:s.getBytes())
+        def file = new File(size: 1024.3, content:"contenido".getBytes())
         file.fileType = fileType
-        boolean rta = rta1
+        file.validate()
 
         then:
-        Matcher matcher= pattern.matcher(fileType)
-        matcher.matches()== rta1
-
+        file.hasErrors() == !valido
 
         where:
-        fileType   | rta1
+        fileType   | valido
         "/no"      | false
         "si/"      | false
         "si/si"    | true
@@ -42,19 +33,17 @@ class FileSpec extends Specification {
     }
 
     def "test size"() {
+
         when:
-        String s=new String()
-        s="sdkjskdjs"
-        def file = new File(fileType: "si/si",content:s.getBytes())
+        def file = new File(fileType: "si/si",content:"contenidos".getBytes())
         file.size = size
-        boolean rta = rta1
+        file.validate()
 
         then:
-        (size<=10240)== rta1
-
+        file.hasErrors()==!valido
 
         where:
-        size     | rta1
+        size   | valido
         0      | true //Minimo 1
         1.0    | true
         10240  |true
@@ -66,15 +55,14 @@ class FileSpec extends Specification {
         when:
         def file = new File(fileType: "si/si",size: 4.5)
         file.content = content
-        boolean rta = rta1
+        file.validate()
 
         then:
-        (content !=null)== rta1
-
+        file.hasErrors()==!valido
 
         where:
-        content     | rta1
-        35      | true //Minimo 1
-        null |false
+        content   | valido
+        "prueba".getBytes() | true //Minimo 1
+         null      |false
     }
 }

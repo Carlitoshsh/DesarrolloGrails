@@ -8,7 +8,7 @@ class Admin extends User{
 
     static constraints = {
         level   blank:false, nullable: false, range: 1..5
-        rating  blank:false, nullable: false, range: 0.0..100.0
+        rating  blank:false, nullable: false, range: 0..100
     }
 
 }

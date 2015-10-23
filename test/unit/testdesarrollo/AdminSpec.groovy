@@ -15,38 +15,42 @@ class AdminSpec extends Specification {
 
     def "test level"() {
         when:
-        def adm = new Admin(rating: 6.8)
+        def adm = new Admin(rating: 6.8,age: 20, name: "x"*10, username: "kokoriko", password: "as31234ww", lastname:"perez")
         adm.level = level
-        boolean rta = rta1
+        adm.validate()
+
 
         then:
-        (level>=1 && level<=5)== rta1
+        adm.hasErrors() == !valido
 
 
         where:
-        level     | rta1
+        level     | valido
           0      | false //Minimo 1
           6      | false // Maximo 5
           2      | true
           1      | true
           5      | true
 
+
     }
     def "test rating"() {
         when:
-        def adm = new Admin(level: 4)
+        def adm = new Admin(level: 4,age: 20, name: "x"*10, username: "kokoriko", password: "as31234ww", lastname:"perez")
         adm.rating = rating
-        boolean rta = rta1
+        adm.validate()
+
 
         then:
-        (rating>=0.0 && rating<=100.0)== rta1
+        adm.hasErrors() == !valido
+
 
         where:
-        rating     | rta1
-        -1.0      | false // Minimo 0
-        100.1     | false // Maximo 100
-        0.0       | true
-        99.0      | true
+        rating     | valido
+         -1.0      | false // Minimo 0
+         101       | false // Maximo 100
+         0.0       | true
+         99.0      | true
 
 
     }
