@@ -16,12 +16,12 @@ class RegularSpec extends Specification {
 
     def "test postView"(){
         when:
-        def regular = new Regular(strikesNumber: 1, starsNumber: 1)
+        def regular = new Regular(strikesNumber: 1, starsNumber: 1,age: 20, name: "x"*10, username: "kokoriko", password: "as31234ww", lastname:"perez")
         regular.postViews = post
-        boolean rta = rta1
+        regular.validate()
 
         then:
-        ( post >= 0 ) == rta1
+        regular.hasErrors()==!rta1
 
         where:
         post  | rta1
@@ -30,13 +30,15 @@ class RegularSpec extends Specification {
         100 | true
     }
 
-    def "test strikes"(){
+  def "test strikes"(){
         when:
-        def regular = new Regular(postViews: 1, starsNumber: 1)
+        def regular = new Regular(postViews: 1, starsNumber: 1, age: 20, name: "x"*10, username: "kokoriko", password: "as31234ww", lastname:"perez")
         regular.strikesNumber = strike
+        regular.validate()
         boolean rta = rta1
 
         then:
+        regular.hasErrors()==!rta1
         (strike >= 0 && strike <= 3) == rta1
 
         where:
@@ -49,12 +51,12 @@ class RegularSpec extends Specification {
 
     def "test stars"(){
         when:
-        def regular = new Regular(postViews: 1, strikesNumber: 1)
+        def regular = new Regular(postViews: 1, strikesNumber: 1, age: 20, name: "x"*10, username: "kokoriko", password: "as31234ww", lastname:"perez")
         regular.starsNumber = star
-        boolean rta = valido
+        regular.validate()
 
         then:
-        (star >= 0 && star <= 5) == valido
+        regular.hasErrors()==!valido
 
         where:
         star | valido
