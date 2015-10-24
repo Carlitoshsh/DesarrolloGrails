@@ -13,6 +13,9 @@ class File{
     def share(){
 
     }
+
+    static mapping = { firstName column: 'post_belongs_id' }
+
     static belongsTo = [post:Post]
     static constraints = {
         fileType blank: false,  nullable: false, matches: "(.+[/].+)"
