@@ -9,6 +9,9 @@ class Admin extends User{
         forums fetch: "join"
     }
 
+    def c = Admin.createCriteria()
+    def results = c { order("level", "desc")}
+
     static constraints = {
         level   blank:false, nullable: false, range: 1..5
         rating  blank:false, nullable: false, range: 0..100
