@@ -18,10 +18,14 @@ class Post{
     def share(){
 
     }
-    static belongsTo = [Regular,Forum]
+    static belongsTo = [regular:Regular, forum:Forum]
     static hasMany = [files:File]
     static mapping = {
         files fetch: "join"
+        dateCreated defaultValue: new Date()
+        lastUpdate defaultValue: new Date()
+        regular joinTable: [key:'owner_id']
+        forum joinTable: [key: 'fatherForum_id']
     }
 
 

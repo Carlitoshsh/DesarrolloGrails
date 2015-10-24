@@ -6,7 +6,7 @@ class Forum{
     Date dateCreated
     String category
 
-    static belongsTo = [Admin]
+    static belongsTo = [admin:Admin]
     static hasMany = [posts:Post] //revisar este no se si esta bien //Si esta bien
     static mapping = {
         posts fetch: "join"
