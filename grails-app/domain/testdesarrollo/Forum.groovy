@@ -7,9 +7,10 @@ class Forum{
     String category
 
     static belongsTo = [Admin]
-    static hasMany = [posts:Post] //revisar este no se si esta bien
+    static hasMany = [posts:Post] //revisar este no se si esta bien //Si esta bien
     static mapping = {
         posts fetch: "join"
+        dateCreated defaultValue: new Date()
     }
 
     static constraints = {
