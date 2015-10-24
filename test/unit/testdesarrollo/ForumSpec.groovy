@@ -56,7 +56,7 @@ class ForumSpec extends Specification {
         boolean rta = rta1
 
         then:
-        (new Date()).compareTo(dc) > 0
+        ((new Date()).compareTo(dc) < 0) == rta1
 
         where:
         dc | rta1

@@ -1,17 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Niki-PC" id="0" name="UserSpec" package="testdesarrollo" tests="5" time="5.226" timestamp="2015-10-22T01:15:59">
+  <testsuite errors="0" failures="0" hostname="Carlos" id="0" name="AdminSpec" package="testdesarrollo" tests="2" time="22.628" timestamp="2015-10-24T17:56:09">
       <properties />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test name" time="3.931" />
+      <testcase classname="testdesarrollo.AdminSpec" name="test level" time="21.275" />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="1.116" />
+      <testcase classname="testdesarrollo.AdminSpec" name="test rating" time="0.942" />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.038" />
+      <system-out><![CDATA[--Output from test level--
+--Output from test rating--
+]]></system-out>
 
-      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.031" />
+      <system-err><![CDATA[--Output from test level--
+--Output from test rating--
+]]></system-err>
 
-      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.036" />
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="1" name="FileSpec" package="testdesarrollo" tests="3" time="1.856" timestamp="2015-10-24T17:56:32">
+      <properties />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test fileType" time="0.96" />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test size" time="0.611" />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test content" time="0.227" />
+
+      <system-out><![CDATA[--Output from test fileType--
+--Output from test size--
+--Output from test content--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test fileType--
+--Output from test size--
+--Output from test content--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="2" name="ForumSpec" package="testdesarrollo" tests="3" time="1.232" timestamp="2015-10-24T17:56:34">
+      <properties />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test name" time="0.72" />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test category" time="0.312" />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test dateCreate" time="0.134" />
+
+      <system-out><![CDATA[--Output from test name--
+--Output from test category--
+--Output from test dateCreate--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test name--
+--Output from test category--
+--Output from test dateCreate--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="3" name="PostSpec" package="testdesarrollo" tests="3" time="1.559" timestamp="2015-10-24T17:56:36">
+      <properties />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba de topic" time="1.087" />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha creacion del post" time="0.219" />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha actualizacion del post" time="0.191" />
+
+      <system-out><![CDATA[--Output from Prueba de topic--
+--Output from Prueba fecha creacion del post--
+--Output from Prueba fecha actualizacion del post--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Prueba de topic--
+--Output from Prueba fecha creacion del post--
+--Output from Prueba fecha actualizacion del post--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="4" name="RegularSpec" package="testdesarrollo" tests="3" time="1.837" timestamp="2015-10-24T17:56:38">
+      <properties />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test postView" time="0.869" />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test strikes" time="0.487" />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test stars" time="0.432" />
+
+      <system-out><![CDATA[--Output from test postView--
+--Output from test strikes--
+--Output from test stars--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test postView--
+--Output from test strikes--
+--Output from test stars--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="5" name="UserSpec" package="testdesarrollo" tests="5" time="1.214" timestamp="2015-10-24T17:56:40">
+      <properties />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test name" time="0.704" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="0.131" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.129" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.087" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.103" />
 
       <system-out><![CDATA[--Output from test name--
 --Output from test lastName--

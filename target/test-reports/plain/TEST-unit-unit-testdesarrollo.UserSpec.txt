@@ -1,5 +1,5 @@
 Testsuite: testdesarrollo.UserSpec
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 5,226 sec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 1,214 sec
 ------------- Standard Output ---------------
 --Output from test name--
 --Output from test lastName--
@@ -15,8 +15,8 @@ Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 5,226 sec
 --Output from test password--
 ------------- ---------------- ---------------
 
-Testcase: test name took 3,931 sec
-Testcase: test lastName took 1,116 sec
-Testcase: test AGE took 0,038 sec
-Testcase: test username took 0,031 sec
-Testcase: test password took 0,036 sec
+Testcase: test name took 0,704 sec
+Testcase: test lastName took 0,131 sec
+Testcase: test AGE took 0,129 sec
+Testcase: test username took 0,087 sec
+Testcase: test password took 0,103 sec

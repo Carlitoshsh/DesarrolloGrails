@@ -31,13 +31,13 @@ class PostSpec extends Specification{
         boolean rta = valid
 
         then:
-        (new Date()).compareTo(creado) > 0
+        ( (new Date()).compareTo(creado) < 0 ) == valid
 
         where:
         creado | valid
         new Date() | false
         new Date().next() | true
-        new Date(2010,2,3) | false
+        new Date()-1 | false
     }
 
     def "Prueba fecha actualizacion del post"(){
@@ -47,7 +47,7 @@ class PostSpec extends Specification{
         boolean rta = valid
 
         then:
-        (new Date()).compareTo(update) > 0
+         ( (new Date()).compareTo(update) < 0 ) == valid
 
         where:
         update | valid
@@ -55,5 +55,6 @@ class PostSpec extends Specification{
         new Date().next() | true
         new Date(2015,12,13) | true
     }
+
 
 }
