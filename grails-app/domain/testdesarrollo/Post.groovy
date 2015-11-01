@@ -6,26 +6,23 @@ class Post{
     Date dateCreated
     Date lastUpdate
     boolean isAllowed
+    ArrayList<String> comments = new ArrayList<String>()
+    int rate
 
-    def comment(){
-
-    }
-
-    def rate(){
-
-    }
-
-    def share(){
-
-    }
     static belongsTo = [regular:Regular, forum:Forum]
     static hasMany = [files:File]
+
     static mapping = {
-        files fetch: "join"
-        dateCreated defaultValue: new Date()
-        lastUpdate defaultValue: new Date()
-        regular joinTable: [key:'owner_id']
-        forum joinTable: [key: 'fatherForum_id']
+        regular key:'owner_id'
+        forum key: 'fatherForum_id'
+    }
+
+    def beforeInsert(){
+        this.dateCreated = new Date().next()
+    }
+
+    def beforeUpdate(){
+        this.lastUpdate = new Date().next()
     }
 
 
@@ -34,7 +31,7 @@ class Post{
         dateCreated nullable: false, min: new Date().next()
         lastUpdate nullable: false, min: new Date().next()
         isAllowed nullable: false
-
+        rate nullable: false, min: 0
     }
 
 }
