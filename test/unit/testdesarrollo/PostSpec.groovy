@@ -6,9 +6,25 @@ import spock.lang.Specification
 @TestFor(Post)
 class PostSpec extends Specification{
 
+    def "Prueba comentarios"(){
+        when:
+        def tema = new Post( topic: "Nuevo Post", dateCreated: new Date(2015,10,22), lastUpdate: new Date(2015,10,22), isAllowed: true, rate: 2)
+        tema.comments = comments
+        tema.validate()
+
+        then:
+        tema.hasErrors() == !valido
+
+        where:
+        comments | valido
+        ["Hello"] | true
+        // []  |true
+        ["Hello", "world"] | true
+    }
+
     def "Prueba de topic"(){
         when:
-        def tema = new Post(dateCreated: new Date(2015,10,22), lastUpdate: new Date(2015,10,22), isAllowed: true)
+        def tema = new Post(dateCreated: new Date(2015,10,22), lastUpdate: new Date(2015,10,22), isAllowed: true, comments: ["Hello"], rate: 2)
         tema.topic = topic
         boolean rta = valid
 
@@ -26,7 +42,7 @@ class PostSpec extends Specification{
 
     def "Prueba fecha creacion del post"(){
         when:
-        def tema = new Post(topic: "x"*25, lastUpdate: new Date(2015,10,22), isAllowed: true)
+        def tema = new Post(topic: "x"*25, lastUpdate: new Date(2015,10,22), isAllowed: true, comments: ["Hello"], rate: 2)
         tema.dateCreated = creado
         boolean rta = valid
 
@@ -42,7 +58,7 @@ class PostSpec extends Specification{
 
     def "Prueba fecha actualizacion del post"(){
         when:
-        def tema = new Post(topic: "x"*25, dateCreated: new Date(2015,10,22), isAllowed: true)
+        def tema = new Post(topic: "x"*25, dateCreated: new Date(2015,10,22), isAllowed: true, comments: ["Hello"], rate: 2)
         tema.lastUpdate = update
         boolean rta = valid
 

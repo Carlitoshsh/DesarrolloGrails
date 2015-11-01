@@ -6,7 +6,7 @@ class Post{
     Date dateCreated
     Date lastUpdate
     boolean isAllowed
-    ArrayList<String> comments = new ArrayList<String>()
+    String comments = [] as ArrayList
     int rate
 
     static belongsTo = [regular:Regular, forum:Forum]
