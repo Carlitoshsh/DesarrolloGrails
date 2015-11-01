@@ -1,14 +1,14 @@
 package desarrollograils
 
-class FiltrosFilters {
+class PostFilters {
 
     def filters = {
         all(controller:'*', action:"index",invert:true) {
             before = {
-       //         if(!session.user != "logged"){
-       //             redirect(action:'index')
-       //             return false;
-   //             }
+                authStatus = session.user
+                if(!authStatus != 'logged') {
+                    redirect(controller: 'Post' ,action:'index')
+                }
             }
             after = { Map model ->
 
