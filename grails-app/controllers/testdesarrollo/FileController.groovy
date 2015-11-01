@@ -108,4 +108,14 @@ class FileController {
             '*' { render status: NOT_FOUND }
         }
     }
+
+    def download(){
+        //def actualF = File.findById(params.actualFile)
+        //def id = actualF.id
+        //Do things with the actualFile id
+    }
+
+    def share(){
+        render "Aun no se ha implementado esta funcionalidad :( "
+    }
 }

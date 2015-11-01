@@ -6,14 +6,6 @@ class File{
     Byte[] content
     double size
 
-    def download(){
-
-    }
-
-    def share(){
-
-    }
-
     static mapping = { firstName column: 'post_belongs_id' }
 
     static belongsTo = [post:Post]
