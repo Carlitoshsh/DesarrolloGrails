@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Carlos" name="testdesarrollo.UserSpec" tests="5" time="1.214" timestamp="2015-10-24T17:56:40">
+<testsuite errors="0" failures="0" hostname="Carlos" name="testdesarrollo.UserSpec" tests="5" time="1.901" timestamp="2015-11-01T04:53:31">
   <properties />
-  <testcase classname="testdesarrollo.UserSpec" name="test name" time="0.704" />
-  <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="0.131" />
-  <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.129" />
-  <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.087" />
-  <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.103" />
+  <testcase classname="testdesarrollo.UserSpec" name="test name" time="0.685" />
+  <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="0.115" />
+  <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.284" />
+  <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.262" />
+  <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.446" />
   <system-out><![CDATA[--Output from test name--
 --Output from test lastName--
 --Output from test AGE--

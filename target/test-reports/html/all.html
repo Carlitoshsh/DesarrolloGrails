@@ -15,10 +15,15 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        19
+                        62
                         tests
                     
-                        without a single error or failure!
+                        with
+                        12 errors
+
+                        and
+                        7 failures
+                        .
                     </p>
 </div>
 <div class="grid_2 omega">
@@ -41,6 +46,1064 @@
 </nav>
 </div>
 <div class="clear"></div>
+<div class="testsuite error">
+<div class="header">
+<h2>AdminControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 60.945 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 1.143 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 3.607 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.AdminController._tt__save_closure11$_closure16(AdminController.groovy:50)
+	at testdesarrollo.AdminController.$tt__save(AdminController.groovy:47)
+	at testdesarrollo.AdminControllerSpec.Test the save action correctly persists an instance(AdminControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 1.657 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.997 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 1.065 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.AdminControllerSpec.Test the update action performs an update on a valid domain instance(AdminControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.694 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Admin.count() == 1
+      |       |
+      0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Admin.count() == 1
+      |       |
+      0       false
+
+	at testdesarrollo.AdminControllerSpec.Test that the delete action deletes an instance if it exists(AdminControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>FileControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 4.549 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.162 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 1.493 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.File : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.File : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.FileController._tt__save_closure11$_closure16(FileController.groovy:50)
+	at testdesarrollo.FileController.$tt__save(FileController.groovy:47)
+	at testdesarrollo.FileControllerSpec.Test the save action correctly persists an instance(FileControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.239 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.517 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 1.3 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.FileControllerSpec.Test the update action performs an update on a valid domain instance(FileControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.394 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+File.count() == 1
+     |       |
+     0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+File.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.FileControllerSpec.Test that the delete action deletes an instance if it exists(FileControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>ForumControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 2.342 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.391 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 1.108 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.Forum : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.Forum : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.ForumController._tt__save_closure11$_closure16(ForumController.groovy:50)
+	at testdesarrollo.ForumController.$tt__save(ForumController.groovy:47)
+	at testdesarrollo.ForumControllerSpec.Test the save action correctly persists an instance(ForumControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.668 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.167 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.616 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.ForumControllerSpec.Test the update action performs an update on a valid domain instance(ForumControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 1.638 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Forum.count() == 1
+      |       |
+      0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Forum.count() == 1
+      |       |
+      0       false
+
+	at testdesarrollo.ForumControllerSpec.Test that the delete action deletes an instance if it exists(ForumControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>PostControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 1.683 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.086 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.294 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.Post : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.Post : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.PostController._tt__save_closure14$_closure19(PostController.groovy:68)
+	at testdesarrollo.PostController.$tt__save(PostController.groovy:65)
+	at testdesarrollo.PostControllerSpec.Test the save action correctly persists an instance(PostControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.104 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.106 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.497 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.PostControllerSpec.Test the update action performs an update on a valid domain instance(PostControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.125 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Post.count() == 1
+     |       |
+     0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Post.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.PostControllerSpec.Test that the delete action deletes an instance if it exists(PostControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>RegularControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 3.67 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.483 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.481 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.RegularController._tt__save_closure11$_closure16(RegularController.groovy:49)
+	at testdesarrollo.RegularController.$tt__save(RegularController.groovy:46)
+	at testdesarrollo.RegularControllerSpec.Test the save action correctly persists an instance(RegularControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.598 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.451 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.354 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.RegularControllerSpec.Test the update action performs an update on a valid domain instance(RegularControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.237 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Regular.count() == 1
+        |       |
+        0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Regular.count() == 1
+        |       |
+        0       false
+
+	at testdesarrollo.RegularControllerSpec.Test that the delete action deletes an instance if it exists(RegularControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>UserControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 1.573 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.171 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 1.403 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.UserController._tt__save_closure11$_closure16(UserController.groovy:47)
+	at testdesarrollo.UserController.$tt__save(UserController.groovy:44)
+	at testdesarrollo.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.533 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.444 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.499 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at testdesarrollo.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:121)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.121 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:141)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite failure">
+<div class="header">
+<h2>PostSpec</h2>
+<h3>
+                        Executed
+                        4
+                        tests
+                    
+                        with
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Prueba comentarios">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Prueba comentarios</b>
+</p>
+<p class="summary">Executed in 1.77 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba de topic">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Prueba de topic</b>
+</p>
+<p class="summary">Executed in 0.465 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba fecha creacion del post">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Prueba fecha creacion del post</b>
+</p>
+<p class="summary">Executed in 0.888 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba fecha actualizacion del post">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Prueba fecha actualizacion del post</b>
+</p>
+<p class="summary">Executed in 1.067 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Prueba comentarios--
+--Output from Prueba de topic--
+--Output from Prueba fecha creacion del post--
+--Output from Prueba fecha actualizacion del post--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Prueba comentarios--
+--Output from Prueba de topic--
+--Output from Prueba fecha creacion del post--
+--Output from Prueba fecha actualizacion del post--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
 <div class="testsuite success">
 <div class="header">
 <h2>AdminSpec</h2>
@@ -57,7 +1120,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test level</b>
 </p>
-<p class="summary">Executed in 21.275 seconds.</p>
+<p class="summary">Executed in 5.899 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -67,7 +1130,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test rating</b>
 </p>
-<p class="summary">Executed in 0.942 seconds.</p>
+<p class="summary">Executed in 1.305 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -104,7 +1167,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test fileType</b>
 </p>
-<p class="summary">Executed in 0.96 seconds.</p>
+<p class="summary">Executed in 1.068 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -114,7 +1177,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test size</b>
 </p>
-<p class="summary">Executed in 0.611 seconds.</p>
+<p class="summary">Executed in 0.571 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -124,7 +1187,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test content</b>
 </p>
-<p class="summary">Executed in 0.227 seconds.</p>
+<p class="summary">Executed in 0.242 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -163,7 +1226,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test name</b>
 </p>
-<p class="summary">Executed in 0.72 seconds.</p>
+<p class="summary">Executed in 1.364 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -173,7 +1236,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test category</b>
 </p>
-<p class="summary">Executed in 0.312 seconds.</p>
+<p class="summary">Executed in 0.912 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -183,7 +1246,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test dateCreate</b>
 </p>
-<p class="summary">Executed in 0.134 seconds.</p>
+<p class="summary">Executed in 0.277 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -208,65 +1271,6 @@
 </div>
 <div class="testsuite success">
 <div class="header">
-<h2>PostSpec</h2>
-<h3>
-                        Executed
-                        3
-                        tests
-                    
-                        without a single error or failure!
-                    </h3>
-</div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba de topic">
-<div class="grid_3 alpha">
-<p>
-<span class="icon success"></span><b class="testname message success">Prueba de topic</b>
-</p>
-<p class="summary">Executed in 1.087 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba fecha creacion del post">
-<div class="grid_3 alpha">
-<p>
-<span class="icon success"></span><b class="testname message success">Prueba fecha creacion del post</b>
-</p>
-<p class="summary">Executed in 0.219 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="Prueba fecha actualizacion del post">
-<div class="grid_3 alpha">
-<p>
-<span class="icon success"></span><b class="testname message success">Prueba fecha actualizacion del post</b>
-</p>
-<p class="summary">Executed in 0.191 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
-</div>
-<div class="clearfix output footer">
-<div class="sysout">
-<h2>Standard output</h2>
-<pre class="stdout">--Output from Prueba de topic--
---Output from Prueba fecha creacion del post--
---Output from Prueba fecha actualizacion del post--
-</pre>
-</div>
-<div class="syserr">
-<h2>System error</h2>
-<pre class="syserr">--Output from Prueba de topic--
---Output from Prueba fecha creacion del post--
---Output from Prueba fecha actualizacion del post--
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testsuite success">
-<div class="header">
 <h2>RegularSpec</h2>
 <h3>
                         Executed
@@ -281,7 +1285,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test postView</b>
 </p>
-<p class="summary">Executed in 0.869 seconds.</p>
+<p class="summary">Executed in 0.928 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -291,7 +1295,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test strikes</b>
 </p>
-<p class="summary">Executed in 0.487 seconds.</p>
+<p class="summary">Executed in 0.54 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -301,7 +1305,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test stars</b>
 </p>
-<p class="summary">Executed in 0.432 seconds.</p>
+<p class="summary">Executed in 0.286 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -340,7 +1344,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test name</b>
 </p>
-<p class="summary">Executed in 0.704 seconds.</p>
+<p class="summary">Executed in 0.685 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -350,7 +1354,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test lastName</b>
 </p>
-<p class="summary">Executed in 0.131 seconds.</p>
+<p class="summary">Executed in 0.115 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -360,7 +1364,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test AGE</b>
 </p>
-<p class="summary">Executed in 0.129 seconds.</p>
+<p class="summary">Executed in 0.284 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -370,7 +1374,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test username</b>
 </p>
-<p class="summary">Executed in 0.087 seconds.</p>
+<p class="summary">Executed in 0.262 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -380,7 +1384,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test password</b>
 </p>
-<p class="summary">Executed in 0.103 seconds.</p>
+<p class="summary">Executed in 0.446 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>

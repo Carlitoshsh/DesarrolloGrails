@@ -1,122 +1,119 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
-		<style type="text/css" media="screen">
-			#status {
-				background-color: #eee;
-				border: .2em solid #fff;
-				margin: 2em 2em 1em;
-				padding: 1em;
-				width: 12em;
-				float: left;
-				-moz-box-shadow: 0px 0px 1.25em #ccc;
-				-webkit-box-shadow: 0px 0px 1.25em #ccc;
-				box-shadow: 0px 0px 1.25em #ccc;
-				-moz-border-radius: 0.6em;
-				-webkit-border-radius: 0.6em;
-				border-radius: 0.6em;
-			}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-${request.contextPath}/theme/assets/ico/favicon.png">
 
-			.ie6 #status {
-				display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
-			}
+    <title>FORUM 2.0 - Free Bootstrap Theme </title>
 
-			#status ul {
-				font-size: 0.9em;
-				list-style-type: none;
-				margin-bottom: 0.6em;
-				padding: 0;
-			}
+    <!-- Bootstrap core CSS -->
+    <link href="${request.contextPath}/theme/assets/css/bootstrap.css" rel="stylesheet">
 
-			#status li {
-				line-height: 1.3;
-			}
 
-			#status h1 {
-				text-transform: uppercase;
-				font-size: 1.1em;
-				margin: 0 0 0.3em;
-			}
+    <!-- Custom styles for this template -->
+    <link href="${request.contextPath}/theme/assets/css/main.css" rel="stylesheet">
 
-			#page-body {
-				margin: 2em 1em 1.25em 18em;
-			}
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="${request.contextPath}/theme/assets/js/hover.zoom.js"></script>
+    <script src="${request.contextPath}/theme/assets/js/hover.zoom.conf.js"></script>
 
-			h2 {
-				margin-top: 1em;
-				margin-bottom: 0.3em;
-				font-size: 1em;
-			}
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-			p {
-				line-height: 1.5;
-				margin: 0.25em 0;
-			}
+<body>
 
-			#controller-list ul {
-				list-style-position: inside;
-			}
+<!-- Static navbar -->
+<div class="container" >
+    <center><img class= "text-vertical-center" src="${request.contextPath}/theme/assets/img/forum.png" width="200px" height="auto"/></center>
+</div>
 
-			#controller-list li {
-				line-height: 1.3;
-				list-style-position: inside;
-				margin: 0.25em 0;
-			}
+<!-- Static navbar -->
+<div class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p class="navbar-brand">FORUM 2.0</p>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="work.html">Mi Perfil</a></li>
+                <li><a href="about.html">Mis Post</a></li>
+                <li><a href="blog.html">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
 
-			@media screen and (max-width: 480px) {
-				#status {
-					display: none;
-				}
+<!-- +++++ Welcome Section +++++ -->
+<div id="ww">
+    <div class="container">
+        <div class="row mt centered">
+            <div class="col-lg-4">
+                <h3>Bienvenido a la aplicación FORUM 2.0</h3>
+                <p>Consultar:</p>
+                <p><a>Foros</a></p>
+                <p><a>Usuarios</a></p>
+                <p><a>Entradas (Post)</a></p>
+                <p><a>Archivos</a></p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Ultimas entradas (Post)</h3>
+                <div class="container" id="box">
+                    Aquí verás los post recientes...
+                    <p>post 1</p>
+                    <p>post 2</p>
+                    <p>post 3</p>
+                    <p>post 4</p>
+                    <p>post 5</p>
+                    <p>post 6</p>
+                    <p>post 7</p>
+                </div>
 
-				#page-body {
-					margin: 0 1em 1em;
-				}
+            </div>
+            <div class="col-lg-4">
+                <h3>Foros con más entradas</h3>
+                <div class ="container" id="box">
+                    Aquí verás los foros más populares...
+                    <p>entrada 1</p>
+                    <p>entrada 2</p>
+                    <p>entrada 3</p>
+                    <p>entrada 4</p>
+                    <p>entrada 5</p>
+                    <p>entrada 6</p>
+                    <p>entrada 7</p>
+                </div>
 
-				#page-body h1 {
-					margin-top: 0;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
-			<h1>Application Status</h1>
-			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${GroovySystem.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
-			</ul>
-		</div>
-		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /ww -->
 
-			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
-				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
-				</ul>
-			</div>
-		</div>
-	</body>
+<!-- +++++ Footer Section +++++ -->
+
+<div id="footer">
+    <div class="container">
+        <div>
+            <center><p>Aplicación hecha por: <strong>PreventRisk</strong></p></center>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="${request.contextPath}/theme/assets/js/bootstrap.min.js"></script>
+</body>
 </html>

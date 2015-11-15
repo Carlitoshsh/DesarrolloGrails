@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="0" name="AdminSpec" package="testdesarrollo" tests="2" time="22.628" timestamp="2015-10-24T17:56:09">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="0" name="AdminControllerSpec" package="testdesarrollo" tests="7" time="70.814" timestamp="2015-11-01T04:51:29">
       <properties />
 
-      <testcase classname="testdesarrollo.AdminSpec" name="test level" time="21.275" />
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test the index action returns the correct model" time="60.945" />
 
-      <testcase classname="testdesarrollo.AdminSpec" name="test rating" time="0.942" />
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test the create action returns the correct model" time="1.143" />
+
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test the save action correctly persists an instance" time="3.607">
+          <error message="Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.AdminController._tt__save_closure11$_closure16(AdminController.groovy:50)
+	at testdesarrollo.AdminController.$tt__save(AdminController.groovy:47)
+	at testdesarrollo.AdminControllerSpec.Test the save action correctly persists an instance(AdminControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test that the show action returns the correct model" time="1.657" />
+
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test that the edit action returns the correct model" time="0.997" />
+
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test the update action performs an update on a valid domain instance" time="1.065">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.AdminControllerSpec.Test the update action performs an update on a valid domain instance(AdminControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.AdminControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.694">
+          <failure message="Condition not satisfied:&#xa;&#xa;Admin.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Admin.count() == 1
+      |       |
+      0       false
+
+	at testdesarrollo.AdminControllerSpec.Test that the delete action deletes an instance if it exists(AdminControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="1" name="AdminSpec" package="testdesarrollo" tests="2" time="7.362" timestamp="2015-11-01T04:52:41">
+      <properties />
+
+      <testcase classname="testdesarrollo.AdminSpec" name="test level" time="5.899" />
+
+      <testcase classname="testdesarrollo.AdminSpec" name="test rating" time="1.305" />
 
       <system-out><![CDATA[--Output from test level--
 --Output from test rating--
@@ -16,14 +75,73 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="1" name="FileSpec" package="testdesarrollo" tests="3" time="1.856" timestamp="2015-10-24T17:56:32">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="2" name="FileControllerSpec" package="testdesarrollo" tests="7" time="8.757" timestamp="2015-11-01T04:52:48">
       <properties />
 
-      <testcase classname="testdesarrollo.FileSpec" name="test fileType" time="0.96" />
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test the index action returns the correct model" time="4.549" />
 
-      <testcase classname="testdesarrollo.FileSpec" name="test size" time="0.611" />
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test the create action returns the correct model" time="0.162" />
 
-      <testcase classname="testdesarrollo.FileSpec" name="test content" time="0.227" />
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test the save action correctly persists an instance" time="1.493">
+          <error message="Cannot redirect for object [testdesarrollo.File : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.File : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.FileController._tt__save_closure11$_closure16(FileController.groovy:50)
+	at testdesarrollo.FileController.$tt__save(FileController.groovy:47)
+	at testdesarrollo.FileControllerSpec.Test the save action correctly persists an instance(FileControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test that the show action returns the correct model" time="0.239" />
+
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test that the edit action returns the correct model" time="0.517" />
+
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test the update action performs an update on a valid domain instance" time="1.3">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.FileControllerSpec.Test the update action performs an update on a valid domain instance(FileControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.FileControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.394">
+          <failure message="Condition not satisfied:&#xa;&#xa;File.count() == 1&#xa;     |       |&#xa;     0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+File.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.FileControllerSpec.Test that the delete action deletes an instance if it exists(FileControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="3" name="FileSpec" package="testdesarrollo" tests="3" time="1.978" timestamp="2015-11-01T04:52:57">
+      <properties />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test fileType" time="1.068" />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test size" time="0.571" />
+
+      <testcase classname="testdesarrollo.FileSpec" name="test content" time="0.242" />
 
       <system-out><![CDATA[--Output from test fileType--
 --Output from test size--
@@ -36,14 +154,73 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="2" name="ForumSpec" package="testdesarrollo" tests="3" time="1.232" timestamp="2015-10-24T17:56:34">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="4" name="ForumControllerSpec" package="testdesarrollo" tests="7" time="7.434" timestamp="2015-11-01T04:52:59">
       <properties />
 
-      <testcase classname="testdesarrollo.ForumSpec" name="test name" time="0.72" />
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test the index action returns the correct model" time="2.342" />
 
-      <testcase classname="testdesarrollo.ForumSpec" name="test category" time="0.312" />
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test the create action returns the correct model" time="0.391" />
 
-      <testcase classname="testdesarrollo.ForumSpec" name="test dateCreate" time="0.134" />
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test the save action correctly persists an instance" time="1.108">
+          <error message="Cannot redirect for object [testdesarrollo.Forum : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.Forum : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.ForumController._tt__save_closure11$_closure16(ForumController.groovy:50)
+	at testdesarrollo.ForumController.$tt__save(ForumController.groovy:47)
+	at testdesarrollo.ForumControllerSpec.Test the save action correctly persists an instance(ForumControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test that the show action returns the correct model" time="0.668" />
+
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test that the edit action returns the correct model" time="0.167" />
+
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.616">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.ForumControllerSpec.Test the update action performs an update on a valid domain instance(ForumControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.ForumControllerSpec" name="Test that the delete action deletes an instance if it exists" time="1.638">
+          <failure message="Condition not satisfied:&#xa;&#xa;Forum.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Forum.count() == 1
+      |       |
+      0       false
+
+	at testdesarrollo.ForumControllerSpec.Test that the delete action deletes an instance if it exists(ForumControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="5" name="ForumSpec" package="testdesarrollo" tests="3" time="2.865" timestamp="2015-11-01T04:53:07">
+      <properties />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test name" time="1.364" />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test category" time="0.912" />
+
+      <testcase classname="testdesarrollo.ForumSpec" name="test dateCreate" time="0.277" />
 
       <system-out><![CDATA[--Output from test name--
 --Output from test category--
@@ -56,34 +233,193 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="3" name="PostSpec" package="testdesarrollo" tests="3" time="1.559" timestamp="2015-10-24T17:56:36">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="6" name="PostControllerSpec" package="testdesarrollo" tests="7" time="2.941" timestamp="2015-11-01T04:53:10">
       <properties />
 
-      <testcase classname="testdesarrollo.PostSpec" name="Prueba de topic" time="1.087" />
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test the index action returns the correct model" time="1.683" />
 
-      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha creacion del post" time="0.219" />
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test the create action returns the correct model" time="0.086" />
 
-      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha actualizacion del post" time="0.191" />
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test the save action correctly persists an instance" time="0.294">
+          <error message="Cannot redirect for object [testdesarrollo.Post : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.Post : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.PostController._tt__save_closure14$_closure19(PostController.groovy:68)
+	at testdesarrollo.PostController.$tt__save(PostController.groovy:65)
+	at testdesarrollo.PostControllerSpec.Test the save action correctly persists an instance(PostControllerSpec.groovy:53)
+</error>
 
-      <system-out><![CDATA[--Output from Prueba de topic--
+      </testcase>
+
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test that the show action returns the correct model" time="0.104" />
+
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test that the edit action returns the correct model" time="0.106" />
+
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.497">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.PostControllerSpec.Test the update action performs an update on a valid domain instance(PostControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.PostControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.125">
+          <failure message="Condition not satisfied:&#xa;&#xa;Post.count() == 1&#xa;     |       |&#xa;     0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Post.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.PostControllerSpec.Test that the delete action deletes an instance if it exists(PostControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Carlos" id="7" name="PostSpec" package="testdesarrollo" tests="4" time="4.467" timestamp="2015-11-01T04:53:13">
+      <properties />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba comentarios" time="1.77">
+          <failure message="Condition not satisfied:&#xa;&#xa;tema.hasErrors() == !valido&#xa;|    |           |  ||&#xa;|    true        |  |true&#xa;|                |  false&#xa;|                false&#xa;testdesarrollo.Post : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</failure>
+
+          <failure message="Condition not satisfied:&#xa;&#xa;tema.hasErrors() == !valido&#xa;|    |           |  ||&#xa;|    true        |  |true&#xa;|                |  false&#xa;|                false&#xa;testdesarrollo.Post : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</failure>
+
+          <failure message="Condition not satisfied:&#xa;&#xa;tema.hasErrors() == !valido&#xa;|    |           |  ||&#xa;|    true        |  |true&#xa;|                |  false&#xa;|                false&#xa;testdesarrollo.Post : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+tema.hasErrors() == !valido
+|    |           |  ||
+|    true        |  |true
+|                |  false
+|                false
+testdesarrollo.Post : (unsaved)
+
+	at testdesarrollo.PostSpec.Prueba comentarios(PostSpec.groovy:16)
+</failure>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba de topic" time="0.465" />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha creacion del post" time="0.888" />
+
+      <testcase classname="testdesarrollo.PostSpec" name="Prueba fecha actualizacion del post" time="1.067" />
+
+      <system-out><![CDATA[--Output from Prueba comentarios--
+--Output from Prueba de topic--
 --Output from Prueba fecha creacion del post--
 --Output from Prueba fecha actualizacion del post--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from Prueba de topic--
+      <system-err><![CDATA[--Output from Prueba comentarios--
+--Output from Prueba de topic--
 --Output from Prueba fecha creacion del post--
 --Output from Prueba fecha actualizacion del post--
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="4" name="RegularSpec" package="testdesarrollo" tests="3" time="1.837" timestamp="2015-10-24T17:56:38">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="8" name="RegularControllerSpec" package="testdesarrollo" tests="7" time="6.596" timestamp="2015-11-01T04:53:17">
       <properties />
 
-      <testcase classname="testdesarrollo.RegularSpec" name="test postView" time="0.869" />
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test the index action returns the correct model" time="3.67" />
 
-      <testcase classname="testdesarrollo.RegularSpec" name="test strikes" time="0.487" />
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test the create action returns the correct model" time="0.483" />
 
-      <testcase classname="testdesarrollo.RegularSpec" name="test stars" time="0.432" />
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test the save action correctly persists an instance" time="0.481">
+          <error message="Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.RegularController._tt__save_closure11$_closure16(RegularController.groovy:49)
+	at testdesarrollo.RegularController.$tt__save(RegularController.groovy:46)
+	at testdesarrollo.RegularControllerSpec.Test the save action correctly persists an instance(RegularControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test that the show action returns the correct model" time="0.598" />
+
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test that the edit action returns the correct model" time="0.451" />
+
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.354">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.RegularControllerSpec.Test the update action performs an update on a valid domain instance(RegularControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.RegularControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.237">
+          <failure message="Condition not satisfied:&#xa;&#xa;Regular.count() == 1&#xa;        |       |&#xa;        0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Regular.count() == 1
+        |       |
+        0       false
+
+	at testdesarrollo.RegularControllerSpec.Test that the delete action deletes an instance if it exists(RegularControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="9" name="RegularSpec" package="testdesarrollo" tests="3" time="1.843" timestamp="2015-11-01T04:53:24">
+      <properties />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test postView" time="0.928" />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test strikes" time="0.54" />
+
+      <testcase classname="testdesarrollo.RegularSpec" name="test stars" time="0.286" />
 
       <system-out><![CDATA[--Output from test postView--
 --Output from test strikes--
@@ -96,18 +432,77 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Carlos" id="5" name="UserSpec" package="testdesarrollo" tests="5" time="1.214" timestamp="2015-10-24T17:56:40">
+  <testsuite errors="2" failures="1" hostname="Carlos" id="10" name="UserControllerSpec" package="testdesarrollo" tests="7" time="4.826" timestamp="2015-11-01T04:53:26">
       <properties />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test name" time="0.704" />
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test the index action returns the correct model" time="1.573" />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="0.131" />
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test the create action returns the correct model" time="0.171" />
 
-      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.129" />
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test the save action correctly persists an instance" time="1.403">
+          <error message="Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [testdesarrollo.User : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at testdesarrollo.UserController._tt__save_closure11$_closure16(UserController.groovy:47)
+	at testdesarrollo.UserController.$tt__save(UserController.groovy:44)
+	at testdesarrollo.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:53)
+</error>
 
-      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.087" />
+      </testcase>
 
-      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.103" />
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test that the show action returns the correct model" time="0.533" />
+
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test that the edit action returns the correct model" time="0.444" />
+
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.499">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at testdesarrollo.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:121)
+</error>
+
+      </testcase>
+
+      <testcase classname="testdesarrollo.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.121">
+          <failure message="Condition not satisfied:&#xa;&#xa;User.count() == 1&#xa;     |       |&#xa;     0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at testdesarrollo.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:141)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Carlos" id="11" name="UserSpec" package="testdesarrollo" tests="5" time="1.901" timestamp="2015-11-01T04:53:31">
+      <properties />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test name" time="0.685" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test lastName" time="0.115" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test AGE" time="0.284" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test username" time="0.262" />
+
+      <testcase classname="testdesarrollo.UserSpec" name="test password" time="0.446" />
 
       <system-out><![CDATA[--Output from test name--
 --Output from test lastName--

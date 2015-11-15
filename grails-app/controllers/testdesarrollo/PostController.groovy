@@ -7,7 +7,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class PostController {
 
-    /*
+
     def comment(){
         def postComment = Post.findById(params.actualPost)
         postComment.comments.add(params.commentContent)
@@ -19,7 +19,7 @@ class PostController {
         def postRate = Post.findById(params.actualPost)
         postRate.rate += 1
         postRate.save()
-    }*/
+    }
 
     def share(){
         render "Aun no se ha implementado esta funcionalidad :( "
