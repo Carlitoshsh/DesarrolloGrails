@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-${request.contextPath}/theme/assets/ico/favicon.png">
 
-    <title>FORUM 2.0 - Free Bootstrap Theme </title>
+    <title>Bienvenido a Forum 2.0 </title>
 
     <!-- Bootstrap core CSS -->
     <link href="${request.contextPath}/theme/assets/css/bootstrap.css" rel="stylesheet">
