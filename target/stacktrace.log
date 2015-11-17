@@ -7383,3 +7383,24 @@ java.lang.NullPointerException
 2015-11-16 19:04:01,571 [FileSystemWatcher: files=#72 cl=java.net.URLClassLoader@4f89331f] ERROR StackTrace  - Full Stack Trace:
 java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
+2015-11-16 23:11:03,065 [FileSystemWatcher: files=#137 cl=groovy.lang.GroovyClassLoader@79c7532f] ERROR StackTrace  - Full Stack Trace:
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at sl.org.objectweb.asm.ClassReader.readShort(Unknown Source)
+	at sl.org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at sl.org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at org.springsource.loaded.TypeDiffComputer.computeDifferences(TypeDiffComputer.java:59)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:301)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-16 23:11:04,188 [FileSystemWatcher: files=#137 cl=groovy.lang.GroovyClassLoader@79c7532f] ERROR StackTrace  - Full Stack Trace:
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-16 23:11:04,562 [FileSystemWatcher: files=#137 cl=groovy.lang.GroovyClassLoader@79c7532f] ERROR StackTrace  - Full Stack Trace:
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-16 23:11:04,562 [FileSystemWatcher: files=#137 cl=groovy.lang.GroovyClassLoader@79c7532f] ERROR StackTrace  - Full Stack Trace:
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at java.lang.Thread.run(Thread.java:745)

@@ -63,9 +63,9 @@
             <div class="col-lg-4">
                 <h3>Bienvenido a la aplicación FORUM 2.0</h3>
                 <p>Consultar:</p>
-                <p><a>Foros</a></p>
-                <p><a>Usuarios</a></p>
-                <p><a>Entradas (Post)</a></p>
+                <li><p><a href= "http://localhost:8080/DesarrolloGrails/forum/index">Foros</a></p></li>
+                <li><p><a href= "http://localhost:8080/DesarrolloGrails/user/create">Usuarios</a></p></li>
+                <li><p><a href= "http://localhost:8080/DesarrolloGrails/post/index">Entradas (post)</a></p></li>
                 <p><a>Archivos</a></p>
             </div>
             <div class="col-lg-4">
