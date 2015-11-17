@@ -1,6 +1,5 @@
 package testdesarrollo
 
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -29,6 +28,38 @@ class FileController {
     def create() {
         respond new File(params)
     }
+
+
+
+    def share(){
+        render "no se ha implementado esta funcionalidad"
+    }
+
+
+
+    def upload(){
+        def file = request.getFile('myFile')
+        if (file.getContentType() == "text/plain" || file.getContentType() == "image/png"){
+            return "Yes"
+        }else {return "No"}
+
+    }
+
+    def download(){
+        def upDownFile = File.findById(params.actualFile)
+        upDownFile.setContent(params.getRequest().getParameter().getBytes())
+        if(upDownFile.fileType.equals("text/plain")){
+            upDownFile.setFileType(".txt")
+        }
+        if (upDownFile.fileType.equals("image/png")){
+            upDownFile.setFileType(".png")
+        }
+
+        upDownFile.save()
+
+
+    }
+
 
     @Transactional
     def save(File fileInstance) {
@@ -107,15 +138,5 @@ class FileController {
             }
             '*' { render status: NOT_FOUND }
         }
-    }
-
-    def download(){
-        //def actualF = File.findById(params.actualFile)
-        //def id = actualF.id
-        //Do things with the actualFile id
-    }
-
-    def share(){
-        render "Aun no se ha implementado esta funcionalidad :( "
     }
 }
